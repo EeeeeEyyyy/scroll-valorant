@@ -1,5 +1,3 @@
-const date = document.getElementById("date");
-date.innerHTML = new Date().getFullYear();
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
 const links = document.querySelector(".links");
@@ -23,7 +21,6 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("fixed-nav");
   }
   if (scrollHeight > 500) {
-    console.log("helo");
     topLink.classList.add("show-link");
   } else {
     topLink.classList.remove("show-link");
